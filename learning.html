@@ -1,0 +1,114 @@
+---
+layout: default
+past:
+  - img: /images/past/1.jpg
+    des: Parents
+  - img: /images/past/2.jpg
+    des: Parents
+  - img: /images/past/3.jpg
+    class: bob-thing--height2
+    des: Parents
+  - img: /images/past/4.jpg
+    des: Parents
+  - img: /images/past/5.jpg
+    des: Parents
+  - img: /images/past/6.jpg
+    class: bob-thing--height2
+    des: Parents
+  - img: /images/past/7.jpg
+    des: Parents
+  - img: /images/past/8.jpg
+    des: Parents
+  - img: /images/past/9.jpg
+    class: bob-thing--height2
+    des: Parents
+  - img: /images/past/10.jpg
+    des: Parents
+  - img: /images/past/11.jpg
+    des: Parents
+  - img: /images/past/12.jpg
+    des: Parents
+present:
+  - img: /images/present/1.jpg
+    des: Parents
+  - img: /images/present/2.jpg
+    des: Parents
+  - img: /images/present/3.jpg
+    class: bob-thing--height2
+    des: Parents
+  - img: /images/present/4.jpg
+    des: Parents
+  - img: /images/present/5.jpg
+    des: Parents
+  - img: /images/present/6.jpg
+    class: bob-thing--height2
+    des: Parents
+  - img: /images/present/7.jpg
+    des: Parents
+  - img: /images/present/8.jpg
+    des: Parents
+  - img: /images/present/9.jpg
+    class: bob-thing--height2
+    des: Parents
+  - img: /images/present/10.jpg
+    des: Parents
+  - img: /images/present/11.jpg
+    des: Parents
+  - img: /images/present/11.jpg
+    des: Parents
+
+---
+  <!-- top banner -->
+  <section>
+    <h1>Today. Tomorrow. Yesterday.
+    </h1>
+    <p class="text-align-center margin padding ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </section>
+
+  <section class="learning-top-banner-now">
+    <h2 class="margin">Stop to Smell the Roses
+    </h2>
+    <div>
+      <div id="bob">
+      {% for learning in page.present %}
+      <div class="bob-thing {{learning.class}}" style="background-image:url('{{learning.img}}')" alt="{{learning.des}}">
+      </div>
+      {% endfor %}
+      </div>
+    </div>
+  </section>
+  <section class="learning-top-banner-tomorrow">
+    <h2 class="margin">Full Steam Ahead
+    </h2>
+  </section>
+  <section class="learning-top-banner-yesterday">
+    <h2>Thankful for the Past
+    </h2>
+    <p class="text-align-center margin padding ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </section>
+
+  <!-- past boxes -->
+<!-- {% for learning in page.mosaic %}
+  <div class="clearfix mosaicflow">
+
+   <div class="mosaicflow__item">
+     <img width="25%" height="25%" src="{{learning.img}}" alt="{{learning.des}}">
+   </div>
+ </div>
+   {% endfor %}
+ </div> -->
+
+ <!-- past boxes -->
+ <section>
+    <div>
+      <div id="bob">
+      {% for learning in page.past %}
+      <div class="bob-thing {{learning.class}}" style="background-image:url('{{learning.img}}')" alt="{{learning.des}}">
+      </div>
+      {% endfor %}
+      </div>
+    </div>
+  </section>
+</body>
